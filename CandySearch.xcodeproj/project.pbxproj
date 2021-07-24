@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		DAF862E326AB66D400C564C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF862E226AB66D400C564C6 /* AppDelegate.swift */; };
 		DAF862E526AB66D400C564C6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF862E426AB66D400C564C6 /* SceneDelegate.swift */; };
-		DAF862E726AB66D400C564C6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF862E626AB66D400C564C6 /* ViewController.swift */; };
 		DAF862EA26AB66D400C564C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAF862E826AB66D400C564C6 /* Main.storyboard */; };
 		DAF862EC26AB66D800C564C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAF862EB26AB66D800C564C6 /* Assets.xcassets */; };
 		DAF862EF26AB66D800C564C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAF862ED26AB66D800C564C6 /* LaunchScreen.storyboard */; };
+		DAF862FA26AB674F00C564C6 /* candies.json in Resources */ = {isa = PBXBuildFile; fileRef = DAF862F926AB674F00C564C6 /* candies.json */; };
+		DAF8630026AB78D900C564C6 /* Candy.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF862FF26AB78D900C564C6 /* Candy.swift */; };
+		DAF8630326AB7F9C00C564C6 /* SearchFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF8630226AB7F9C00C564C6 /* SearchFooter.swift */; };
+		DAF8630626AB8A2900C564C6 /* CandySearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF8630526AB8A2900C564C6 /* CandySearchVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DAF862DF26AB66D400C564C6 /* CandySearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CandySearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAF862E226AB66D400C564C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DAF862E426AB66D400C564C6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DAF862E626AB66D400C564C6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DAF862E926AB66D400C564C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DAF862EB26AB66D800C564C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DAF862EE26AB66D800C564C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DAF862F026AB66D800C564C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAF862F926AB674F00C564C6 /* candies.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = candies.json; sourceTree = "<group>"; };
+		DAF862FF26AB78D900C564C6 /* Candy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Candy.swift; sourceTree = "<group>"; };
+		DAF8630226AB7F9C00C564C6 /* SearchFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFooter.swift; sourceTree = "<group>"; };
+		DAF8630526AB8A2900C564C6 /* CandySearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandySearchVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,26 @@
 		DAF862E126AB66D400C564C6 /* CandySearch */ = {
 			isa = PBXGroup;
 			children = (
+				DAF862F826AB670600C564C6 /* Others */,
 				DAF862E226AB66D400C564C6 /* AppDelegate.swift */,
 				DAF862E426AB66D400C564C6 /* SceneDelegate.swift */,
-				DAF862E626AB66D400C564C6 /* ViewController.swift */,
 				DAF862E826AB66D400C564C6 /* Main.storyboard */,
 				DAF862EB26AB66D800C564C6 /* Assets.xcassets */,
 				DAF862ED26AB66D800C564C6 /* LaunchScreen.storyboard */,
 				DAF862F026AB66D800C564C6 /* Info.plist */,
 			);
 			path = CandySearch;
+			sourceTree = "<group>";
+		};
+		DAF862F826AB670600C564C6 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				DAF862F926AB674F00C564C6 /* candies.json */,
+				DAF862FF26AB78D900C564C6 /* Candy.swift */,
+				DAF8630226AB7F9C00C564C6 /* SearchFooter.swift */,
+				DAF8630526AB8A2900C564C6 /* CandySearchVC.swift */,
+			);
+			path = Others;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +144,7 @@
 				DAF862EF26AB66D800C564C6 /* LaunchScreen.storyboard in Resources */,
 				DAF862EC26AB66D800C564C6 /* Assets.xcassets in Resources */,
 				DAF862EA26AB66D400C564C6 /* Main.storyboard in Resources */,
+				DAF862FA26AB674F00C564C6 /* candies.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +155,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DAF862E726AB66D400C564C6 /* ViewController.swift in Sources */,
 				DAF862E326AB66D400C564C6 /* AppDelegate.swift in Sources */,
+				DAF8630026AB78D900C564C6 /* Candy.swift in Sources */,
+				DAF8630626AB8A2900C564C6 /* CandySearchVC.swift in Sources */,
+				DAF8630326AB7F9C00C564C6 /* SearchFooter.swift in Sources */,
 				DAF862E526AB66D400C564C6 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
